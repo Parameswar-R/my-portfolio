@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
-import { ContactComponent } from './contact/contact.component';
+import { DefaultComponentComponent } from './default-component/default-component.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,13 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ProjectsComponent,
     SkillsComponent,
-    ContactComponent
+    DefaultComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule ,
+    ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,2 +1,74 @@
-<h2>Contact</h2>
-<p>Email:</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="mybc">
+        <section id="contact" class="container py-5">
+
+            <div class="contact-info">
+                <div class="row text-center mb-5">
+                    <div class="col">
+                        <h2>Contact Me</h2>
+                        <p>Feel free to reach out if you have any questions or opportunities!</p>
+                    </div>
+                </div>
+                
+
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <!-- Reactive Form -->
+                        <form formGroupName="contactForm" (ngSubmit)="onSubmit()">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input id="name" class="form-control" type="text" formControlName="name"
+                                    placeholder="Your Name" required />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input id="email" class="form-control" type="email" formControlName="email"
+                                    placeholder="Your Email" required />
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" formControlName="message" rows="5"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <div class="contact-info"> <i class="fas fa-map-marker-alt"></i>
+                            <p>HYDERABAD</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="contact-info"> <i class="fas fa-phone"></i>
+                            <p>+919704338741</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="contact-info"> <i class="fas fa-envelope"></i>
+                            <p>parameswarareddy9704@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+</body>
+
+</html>

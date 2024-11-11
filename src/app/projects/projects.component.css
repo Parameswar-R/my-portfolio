@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.projects-section {
+    width: 100vw; /* Set the width to 100% of the viewport width */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0; /* Remove any default margin */
+    padding: 40px; /* Add padding if needed for content spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #F5F5DC; /* Background color for the entire section */
+    color: white; /* Text color */
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5DC;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+    font-weight: bold;
+    color: #007bff;
+}
+.card-text {
+    color: #6c757d;
+
+}
+.tech-badge {
+    background-color: #007bff;
+    color: #fff;
+    margin: 0.2rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}

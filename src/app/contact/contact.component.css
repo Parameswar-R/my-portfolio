@@ -1,0 +1,48 @@
+.mybc{
+    background-color:#F5F5DC ;
+}
+#contact {
+    background-color: #F5F5DC;
+    width: 100%;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    width: 100%;
+
+  }
+  
+  #contact p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    width: 100%;
+
+  }
+  
+  .form-control {
+    border-radius: 0.25rem;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1.1rem;
+  }
+  
+  .social-icons {
+    margin-top: 30px;
+  }
+  
+  .social-icon {
+    font-size: 2.5rem;
+    margin: 10px;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #0056b3;
+  }
+  

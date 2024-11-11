@@ -1,0 +1,99 @@
+.myclass{
+    background-color: #F5F5DC;
+}
+/* Make the content blink using @keyframes */
+.content {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30%;
+    font-size: 20px;
+    background-color: #D3D3D3;
+    animation: blink 1.5s infinite; /* Apply the blinking animation */
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%); /* Center the content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    opacity: 0; /* Start with invisible text */
+    animation: typewriter 4s steps(40) 1s forwards, blink 3s infinite 5s; /* Typewriter and blinking animation */
+  }/* Make the content blink using @keyframes */
+
+  h1 {
+    font-size: 2.5em;
+    color: #041011; /* Pale Blue for highlight text */
+}
+p {
+  font-size: 1.2em;
+  color: #4682B4; /* Teal for sub-text */
+}
+h2 {
+    font-size: 2em;
+    color: #228B22; /* Forest Green for accent text */
+}
+  /* Typewriter effect */
+  @keyframes typewriter {
+    0% {
+      width: 0;
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  /* Blinking effect */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Scale the image on hover */
+  .image-container:hover .rounded-circle {
+    transform: scale(1.1); /* Scale the image */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Grow content on hover */
+  .image-container:hover .content {
+    font-size: 24px; /* Increase font size */
+    transform: translate(-50%, -50%) scale(1.2); /* Grow content */
+    transition: transform 0.3s ease, font-size 0.3s ease; /* Smooth transition */
+  }
+    .image {
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Full height of the viewport */
+      color: #333333;
+    }
+    .half-screen {
+      height: 100vh; /* Full viewport height */
+      overflow: hidden; /* Remove scroll bars */
+      color: #333333;
+      
+  }
+  .left-section {
+      background-color: #F5F5DC; /* Sample background for testing */
+      color: #333333;
+  }
+  .right-section {
+      background-color: #F5F5DC; /* Sample background for testing */
+      color: #333333;
+  }
+    
+  .custom-image {
+    max-width: 95%; /* Prevents the image from exceeding 90% of the column's width */
+    max-height: 95%; /* Prevents the image from exceeding 90% of the column's height */
+    object-fit: cover; /* Ensures the image is scaled proportionally */
+    max-width:fit-content;
+}
+
+
+

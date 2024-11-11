@@ -1,5 +1,37 @@
-<h1>Your Name</h1>
-<app-about></app-about>
-<app-projects></app-projects>
-<app-skills></app-skills>
-<app-contact></app-contact>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="ml-auto">
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="About" routerLinkActive="active">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="Project" routerLinkActive="active">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="Skill" routerLinkActive="active">Skill</a>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="Contact" routerLinkActive="active">Contact</a>
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="flex-grow-1 p-10">
+    <router-outlet></router-outlet>
+  </div>
+</body>
+
+</html>

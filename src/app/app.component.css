@@ -1,0 +1,35 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display:d-xxl-flex;
+    background-color: #c6ab0e;
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: flex-end;
+    padding: 15px;
+    color: #333333; 
+
+
+}
+
+.navbar a {
+    color: #333333;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: darkgreen;
+    color: #228B22;
+}
